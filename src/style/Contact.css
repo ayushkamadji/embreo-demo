@@ -1,0 +1,85 @@
+.contact {
+  font-family: Helvetica, sans-serif;
+}
+.contact-header {
+}
+.contact-header .greeting {
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 34px;
+}
+.contact-header .instruction {
+  font-size: 30px;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+}
+.contact-header .instruction .text {}
+.contact-header .instruction .decor {
+  position: relative;
+}
+.contact-header .instruction .decor .top {
+  position: absolute;
+  top: 24px;
+  height: 2px;
+  width: 100%;
+  border-bottom: 2px solid #8D6045;
+}
+
+.form {
+  font-size: 23px;
+  background-color: #595D5F;
+  color: #DBD8D2;
+  padding: 12% 12% 8% 12%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form .field {
+  border-bottom: 2px solid #DBD8D2;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+.form .field label {
+  margin-right: 4%;
+}
+.form .field .input input {
+  display: inline-block;
+}
+.form .field input {
+  background: none;
+  border: none;
+  color: #DBD8D2;
+  font-size: 23px;
+  width: 80%;
+}
+.form .multi-line-field {
+  background-attachment: local;
+  background-image:
+    linear-gradient(to right, #595D5F 0px, transparent 0px),
+    linear-gradient(to left, #595D5F 0px, transparent 0px),
+    repeating-linear-gradient(#595D5F, #595D5F 35px, #DBD8D2 35px, #DBD8D2 37px, #595D5F 37px);
+  line-height: 33px;
+}
+
+.form .multi-line-field .multi-line {
+  margin-top: 2px;
+  overflow-wrap: break-word;
+  height: 7em;
+}
+
+.form .multi-line-field .multi-line label {
+  padding-right: 4%;
+}
+
+.form .submit-button {
+  margin-top: 48px;
+  align-self: flex-end;
+  width: 200px;
+  padding: 8px;
+  background-color: transparent;
+  color: #DBD8D2;
+  border: 2px solid #DBD8D2;
+  border-radius: 25px;
+}
