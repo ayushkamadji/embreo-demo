@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NukaCarousel from "nuka-carousel";
 import ComboNav from "./ComboNav";
 import Footer from "./Footer";
+import TransitionWrapper from "./TransitionWrapper";
 import "../style/Home.css";
 
 class Home extends Component {
@@ -116,4 +117,4 @@ const CallToAction = () => (
   </div>
 );
 
-export default Home;
+export default TransitionWrapper(Home);

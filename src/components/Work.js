@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TransitionWrapper from "./TransitionWrapper";
 import ComboNav from "./ComboNav";
 import Showcase from "./Showcase";
 import Footer from "./Footer";
@@ -56,4 +57,4 @@ const WorkHeader = () => (
   </div>
 );
 
-export default Work;
+export default TransitionWrapper(Work);
