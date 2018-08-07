@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const ComboNav = ({ bw, style, children }) => {
   style = style || {}
@@ -6,14 +7,22 @@ const ComboNav = ({ bw, style, children }) => {
   <div className="combonav" style={style}>
     <div className="nav">
       <div className="logo">
+        <Link to="/">
         { bw ? 
             <img src="assets/images/Group_8_BW.png" alt="logo" /> :
             <img src="assets/images/Group_8.png" alg="logo" /> }
+        </Link>
       </div>
       <div className="menu-group">
-        <div className="menu">Studio</div>
-        <div className="menu">Work</div>
-        <div className="menu">Contact</div>
+        <div className="menu">
+          <Link to="#">Studio</Link>
+        </div>
+        <div className="menu">
+          <Link to="/work">Work</Link>
+        </div>
+        <div className="menu">
+          <Link to="/contact">Contact</Link>
+        </div>
       </div>
     </div>
     <div className="header">

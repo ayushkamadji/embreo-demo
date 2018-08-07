@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 class Showcase extends Component {
   state = {  }
   render() {
-    const { left, right, bgUrl, popUrl, title, description } = this.props;
+    const { left, right, bgUrl, popUrl, title, description, url } = this.props;
     let bgImageStyle;
     let bgInfoStyle;
     let popoutStyle = {};
     let titleStyle = {};
     let descriptionStyle = {};
+    const path = url || "#";
     if (left || !right) {
       bgImageStyle = { "order": 1 };
       bgInfoStyle = { "order": 2 };
@@ -30,15 +32,15 @@ class Showcase extends Component {
             <img src={bgUrl} alt=""/>
           </div>
           <div className="info" style={bgInfoStyle}>
-            <div className="title" style={titleStyle}>{title}</div>
+            <Link className="title" style={titleStyle} to={path}>{title}</Link>
             <div className="description" style={descriptionStyle}>
               {description}
-              <div className="more">DISCOVER - </div>
+              <Link to={path} className="more">DISCOVER - </Link>
             </div>
           </div>
         </div>
         <div className="popout" style={popoutStyle}>
-          <img src={popUrl} alt=""/>
+          <Link to={path}><img src={popUrl} alt=""/></Link>
         </div>
       </div>
     );

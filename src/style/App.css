@@ -35,7 +35,13 @@
   font-family: Helvetica, sans-serif;
 }
 
-.combonav .nav .menu-group .menu {}
+.combonav .nav .menu-group .menu a {
+  text-decoration: none;
+}
+
+.combonav .nav .menu-group .menu a:visited {
+  color: inherit;
+}
 
 .combonav .header {
   padding-top: 20%;

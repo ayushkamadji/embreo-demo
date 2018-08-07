@@ -9,6 +9,7 @@
   left: 0%;
   padding-left: 24%;
   z-index: 990;
+  pointer-events: none;
 }
 
 .flare img {

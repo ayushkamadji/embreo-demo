@@ -63,6 +63,7 @@
   font-weight: 500;
   color: #8D6045;
   max-width: 45%;
+  text-decoration: none;
 }
 .showcase .background .info .description {
   font-size: 18px;
@@ -71,10 +72,12 @@
   color: #8D6045;
 }
 .showcase .background .info .more {
+  display: block;
   margin-top: 20%;
   font-size: 18px;
   font-weight: bold;
   color: #595D5F;
+  text-decoration: none;
 }
 
 .showcase .popout {

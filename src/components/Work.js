@@ -12,6 +12,7 @@ class Work extends Component {
           <WorkHeader />
         </ComboNav>
         <Showcase 
+          url="/goldmax"
           bgUrl="/assets/images/Group_37.png"
           popUrl="/assets/images/Group_19.png"
           title="GOLDMAX CONSTRUCTION"
