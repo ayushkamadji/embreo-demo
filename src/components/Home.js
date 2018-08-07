@@ -1,21 +1,33 @@
 import React, { Component } from 'react';
+import NukaCarousel from "nuka-carousel";
+import "../style/Home.css";
 
 class Home extends Component {
-  state = {  }
+  state = {}
   render() {
     return (
-      <div>
-        <ComboNav></ComboNav>
+      <div className="home">
+        <ComboNav>
+          <HomeHeader />
+        </ComboNav>
+        <div className="flare">
+          <img src="assets/images/Group_11.png" alt=""/>
+        </div>
+        <Carousel />
+        <Description />
+        <Services />
+        <CallToAction />
+        <Footer />
       </div>
     );
   }
 }
 
-const ComboNav = () => (
+const ComboNav = ({ children }) => (
   <div className="combonav">
     <div className="nav">
       <div className="logo">
-        <img src="assets/images/Group_8.png" alt="logo"/>
+        <img src="assets/images/Group_8.png" alt="logo" />
       </div>
       <div className="menu-group">
         <div className="menu">Studio</div>
@@ -23,8 +35,129 @@ const ComboNav = () => (
         <div className="menu">Contact</div>
       </div>
     </div>
-    <div className="header"></div>
+    <div className="header">
+      {children}
+    </div>
   </div>
 )
+
+const HomeHeader = () => (
+  <div className="home-header">
+    <div className="title">WE CONVERT IDEAS INTO PRODUCTS AND PRODUCTS INTO BUSINESSES</div>
+    <div className="content">We are a digital studio that works in the intersection of design, technology & human interaction</div>
+  </div>
+);
+
+const Carousel = () => (
+  <div className="carousel">
+    <NukaCarousel 
+      cellSpacing={0} 
+      frameOverflow="hidden" 
+      slideWidth={0.765} 
+      wrapAround>
+      <div className="slide-container">
+        <div className="info-box">
+          <div className="title">EVRYWR</div>
+          <div className="content">Introducing the world's most beautifully designed GPS tracker through e-commerce</div>
+          <div className="more">
+            <i className="ri-chevron-right-circle"></i>
+          </div>
+        </div>
+        <img src="assets/images/evrywr.png" alt="evrywr" />
+      </div>
+      <div className="slide-container">
+        <img src="assets/images/Group_32.png" alt="evrywr" />
+      </div>
+    </NukaCarousel>
+  </div>
+);
+
+const Description = () => (
+  <div className="description">
+    <div className="title">WHAT WE DO</div>
+    <div className="spacer"></div>
+    <div className="content">
+      <p>
+        We design, develop, launch and market digital products that change
+        the way people work, play and connect. Our goal is to offer innovative
+        web app and mobile app, communication and digital marketing solutions,
+        in which we hold your hand throughout the whole life cycle.
+      </p>
+      <p>
+        We are a truly global mobile app development company with 2 offices in 2 countries. The best part, we can help you to turn your app ideas into reality.
+      </p>
+    </div>
+  </div>
+)
+
+const Services = () => (
+  <div className="services-group">
+    <div className="service" id="ideation">
+      <img src="/assets/images/Group_33.png" alt=""/>
+      <div className="content">
+        <div className="step-number">01</div>
+        <div className="title">Ideation Consulting</div>
+      </div>
+    </div>
+    <div className="service" id="app-dev">
+      <img src="/assets/images/Group_34.png" alt=""/>
+      <div className="content">
+        <div className="step-number">02</div>
+        <div className="title">Application Development</div>
+      </div>
+    </div>
+    <div className="service" id="marketing">
+      <img src="/assets/images/Group_35.png" alt=""/>
+      <div className="content">
+        <div className="step-number">03</div>
+        <div className="title">Digital Marketing</div>
+      </div>
+    </div>
+    <div className="service" id="branding">
+      <img src="/assets/images/Group_36.png" alt=""/>
+      <div className="content">
+        <div className="step-number">04</div>
+        <div className="title">Branding & Design</div>
+      </div>
+    </div>
+  </div>
+);
+
+const CallToAction = () => (
+  <div className="call-to-action">
+    <div className="title">BROWSE OUR PORTFOLIO</div>
+    <div className="link">
+      <i className="ri-chevron-right-circle"></i>
+    </div>
+  </div>
+);
+
+const Footer = () => (
+  <div className="footer">
+    <div className="emblem">
+      <img src="/assets/images/Group_17.png" alt=""/>
+      <div className="credit">
+        {'\u00A9'} 2018 Embreo Co.
+      </div>
+    </div>
+    <div className="info-nav-group">
+      <div className="info">
+        <div className="title">LOCATION</div>
+        <p>33 Ubi Avenue 3 #08-13</p>
+        <p>Vertex, Singapore 408868</p>
+      </div>
+      <div className="info">
+        <div className="title">CONTACT</div>
+        <p>+65 9125 6736</p>
+        <p>kit@embreo.co</p>
+      </div>
+      <div className="nav">
+        <div className="title">SOCIAL</div>
+        <div className="nav-item">Facebook</div>
+        <div className="nav-item">Instagram</div>
+      </div>
+    </div>
+  </div>
+);
 
 export default Home;
