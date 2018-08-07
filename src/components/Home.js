@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import NukaCarousel from "nuka-carousel";
+import ComboNav from "./ComboNav";
+import Footer from "./Footer";
 import "../style/Home.css";
 
 class Home extends Component {
@@ -22,24 +24,6 @@ class Home extends Component {
     );
   }
 }
-
-const ComboNav = ({ children }) => (
-  <div className="combonav">
-    <div className="nav">
-      <div className="logo">
-        <img src="assets/images/Group_8.png" alt="logo" />
-      </div>
-      <div className="menu-group">
-        <div className="menu">Studio</div>
-        <div className="menu">Work</div>
-        <div className="menu">Contact</div>
-      </div>
-    </div>
-    <div className="header">
-      {children}
-    </div>
-  </div>
-)
 
 const HomeHeader = () => (
   <div className="home-header">
@@ -128,34 +112,6 @@ const CallToAction = () => (
     <div className="title">BROWSE OUR PORTFOLIO</div>
     <div className="link">
       <i className="ri-chevron-right-circle"></i>
-    </div>
-  </div>
-);
-
-const Footer = () => (
-  <div className="footer">
-    <div className="emblem">
-      <img src="/assets/images/Group_17.png" alt=""/>
-      <div className="credit">
-        {'\u00A9'} 2018 Embreo Co.
-      </div>
-    </div>
-    <div className="info-nav-group">
-      <div className="info">
-        <div className="title">LOCATION</div>
-        <p>33 Ubi Avenue 3 #08-13</p>
-        <p>Vertex, Singapore 408868</p>
-      </div>
-      <div className="info">
-        <div className="title">CONTACT</div>
-        <p>+65 9125 6736</p>
-        <p>kit@embreo.co</p>
-      </div>
-      <div className="nav">
-        <div className="title">SOCIAL</div>
-        <div className="nav-item">Facebook</div>
-        <div className="nav-item">Instagram</div>
-      </div>
     </div>
   </div>
 );
