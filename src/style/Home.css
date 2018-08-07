@@ -45,7 +45,7 @@
   font-size: 17px;
   margin-bottom: 36px;
   font-weight: 700;
-}
+}max-
 
 .carousel .slide-container .info-box .content {
   font-size: 17px;
@@ -58,29 +58,29 @@
   font-size: 20px;
 }
 
-.description {
+.about {
   color: #8D6045;
   padding: 10% 32% 10% 13%;
   font-family: Helvetica;
 }
 
-.description .title {
+.about .title {
   font-size: 17px;
   font-weight: bold;
 }
 
-.description .spacer {
+.about .spacer {
   margin-top: 20px;
   height: 37px;
   border-left: 2px solid #8D6045;
 }
 
-.description .content {
+.about .content {
   padding-left: 64px;
   line-height: 2.6em;
 }
 
-.description .content p {
+.about .content p {
   margin-top: 0;
 }
 

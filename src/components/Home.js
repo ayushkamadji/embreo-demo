@@ -16,7 +16,7 @@ class Home extends Component {
           <img src="assets/images/Group_11.png" alt=""/>
         </div>
         <Carousel />
-        <Description />
+        <About />
         <Services />
         <CallToAction />
         <Footer />
@@ -56,8 +56,8 @@ const Carousel = () => (
   </div>
 );
 
-const Description = () => (
-  <div className="description">
+const About = () => (
+  <div className="about">
     <div className="title">WHAT WE DO</div>
     <div className="spacer"></div>
     <div className="content">

@@ -1,0 +1,88 @@
+.work {
+  background-color: #F2F2F2;
+}
+
+.combonav .header .work-header {}
+
+.combonav .header .work-header .header-nav {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1.5fr 3.5fr 5fr;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #8D6045;
+}
+
+.combonav .header .work-header .header-nav .menu-title {}
+.combonav .header .work-header .header-nav .menu-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.combonav .header .work-header .header-nav .menu-group .menu {}
+
+.combonav .header .work-header .header-nav .menu-group .menu.selected{
+  font-weight: bold;
+  border-bottom: 3px solid #8D6045;
+}
+
+.showcase {
+  position: relative;
+  margin-bottom: 2%;
+}
+
+.showcase .joiner {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+}
+
+.showcase .joiner img {
+  position: relative;
+  left: -50%;
+}
+
+.showcase .background {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.showcase .background .image {}
+.showcase .background .image img {
+  width: 100%;
+}
+
+.showcase .background .info {
+  font-family: Helvetica, sans-serif;
+  padding: 12% 16%;
+  display: flex;
+  flex-direction: column;
+}
+.showcase .background .info .title {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 500;
+  color: #8D6045;
+  max-width: 45%;
+}
+.showcase .background .info .description {
+  font-size: 18px;
+  max-width: 60%;
+  margin: auto;
+  color: #8D6045;
+}
+.showcase .background .info .more {
+  margin-top: 20%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #595D5F;
+}
+
+.showcase .popout {
+  position: absolute;
+  width: 48%;
+  top: 24%;
+}
+
+.showcase .popout img {
+  width: 100%;
+}

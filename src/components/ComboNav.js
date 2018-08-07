@@ -1,7 +1,9 @@
 import React from 'react';
 
-const ComboNav = ({ children }) => (
-  <div className="combonav">
+const ComboNav = ({ style, children }) => {
+  style = style || {}
+  return (
+  <div className="combonav" style={style}>
     <div className="nav">
       <div className="logo">
         <img src="assets/images/Group_8.png" alt="logo" />
@@ -16,6 +18,6 @@ const ComboNav = ({ children }) => (
       {children}
     </div>
   </div>
-)
+)};
 
 export default ComboNav;
