@@ -15,6 +15,7 @@
 
 .combonav {
   padding: 133px 163px;
+  color: #8D6045;
 }
 
 .combonav .nav {
@@ -31,7 +32,6 @@
   grid-column-gap: 32px;
   justify-items: center;
   padding-top: 10px;
-  color: #8D6045;
   font-family: Helvetica, sans-serif;
 }
 
@@ -44,15 +44,16 @@
 .combonav .header .home-header {}
 
 .combonav .header .home-header .title,
+.combonav .header .gold-max-header .title,
 .combonav .header .work-header .title {
   font-family: Roboto;
   font-weight: 300;
   font-size: 45px;
-  color: #8D6045;
   max-width: 800px;
 }
 
 .combonav .header .home-header .content,
+.combonav .header .gold-max-header .content,
 .combonav .header .work-header .content {
   margin-top: 55px;
   font-family: Roboto;

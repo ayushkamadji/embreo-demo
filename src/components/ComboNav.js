@@ -1,12 +1,14 @@
 import React from 'react';
 
-const ComboNav = ({ style, children }) => {
+const ComboNav = ({ bw, style, children }) => {
   style = style || {}
   return (
   <div className="combonav" style={style}>
     <div className="nav">
       <div className="logo">
-        <img src="assets/images/Group_8.png" alt="logo" />
+        { bw ? 
+            <img src="assets/images/Group_8_BW.png" alt="logo" /> :
+            <img src="assets/images/Group_8.png" alg="logo" /> }
       </div>
       <div className="menu-group">
         <div className="menu">Studio</div>
