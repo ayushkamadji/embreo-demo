@@ -48,19 +48,20 @@
   display: inline-block;
 }
 .form .field input {
-  background: none;
+  background: transparent !important;
   border: none;
   color: #DBD8D2;
   font-size: 23px;
   width: 80%;
 }
+
 .form .multi-line-field {
   background-attachment: local;
   background-image:
     linear-gradient(to right, #595D5F 0px, transparent 0px),
     linear-gradient(to left, #595D5F 0px, transparent 0px),
     repeating-linear-gradient(#595D5F, #595D5F 35px, #DBD8D2 35px, #DBD8D2 37px, #595D5F 37px);
-  line-height: 33px;
+  line-height: 34px;
 }
 
 .form .multi-line-field .multi-line {

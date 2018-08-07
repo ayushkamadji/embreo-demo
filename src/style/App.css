@@ -36,6 +36,7 @@
 }
 
 .combonav .nav .menu-group .menu a {
+  color: inherit;
   text-decoration: none;
 }
 

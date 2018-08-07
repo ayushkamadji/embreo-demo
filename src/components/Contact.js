@@ -47,9 +47,8 @@ const ContactForm = () => (
       <input type="text" name="subject"/>
     </div>
     <div className="multi-line-field">
-      <div contentEditable className="multi-line" name="message" id="" rows="5">
-        <label contentEditable={false} htmlFor="message">Message</label>
-        <div className="spacer"></div>
+      <label htmlFor="message">Message</label>
+      <div contentEditable className="multi-line" name="message">
       </div>
     </div>
     <button className="submit-button">SEND MESSAGE</button>
